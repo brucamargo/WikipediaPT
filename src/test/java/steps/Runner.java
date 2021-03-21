@@ -19,6 +19,5 @@ import org.junit.runner.RunWith;
         }
 )
 public class Runner {
-
     // runner chama a features e controla os relatorios
 }
