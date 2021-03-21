@@ -1,6 +1,9 @@
 package steps;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
@@ -18,7 +21,7 @@ public class Post extends Base {// deve extends para pegar o driver da classe ba
     }
     // declarar o selenium na base
 
-    @Dado("^que acesso o site Wikipedia em Portugues$")
+  /*  @Dado("^que acesso o site Wikipedia em Portugues$")
     public void queAcessoOSiteWikipediaEmPortugues() {
         base.driver.get(url); // acessar o site
 
@@ -30,6 +33,23 @@ public class Post extends Base {// deve extends para pegar o driver da classe ba
     }
 
     @Entao("^exibe a expressao \"([^\"]*)\" no titulo da guia$")
+    public void exibeAExpressaoNoTituloDaGuia(String produto)  {
+        assertTrue(base.driver.getTitle().contains(produto)); // verifica se no titulo tem a palavra ovo da pascoa
+
+    }
+*/
+    @Given("^que acesso o site Wikipedia em Portugues$")
+    public void queAcessoOSiteWikipediaEmPortugues() {
+        base.driver.get(url); // acessar o site
+
+    }
+    //apagar as trows
+    @When("^pesquiso por \"([^\"]*)\"$")//ovo da pascoa fica dentro desses caracteres quando declaro uma variavel ele puxa da features a palavra que é
+    public void pesquisoPor(String produto)  {
+        base.driver.findElement(By.id("searchInput")).sendKeys(produto + Keys.ENTER);
+    }
+
+    @Then("^exibe a expressao \"([^\"]*)\" no titulo da guia$")
     public void exibeAExpressaoNoTituloDaGuia(String produto)  {
         assertTrue(base.driver.getTitle().contains(produto)); // verifica se no titulo tem a palavra ovo da pascoa
 
