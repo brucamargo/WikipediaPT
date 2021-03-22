@@ -20,20 +20,24 @@ formatter.feature({
     {
       "line": 7,
       "value": "#Entao exibe a expressao \"Ovo de Pascoa\" no titulo da guia"
+    },
+    {
+      "line": 8,
+      "value": "#executa pela feature, depois runner,"
     }
   ],
-  "line": 11,
+  "line": 12,
   "name": ": Consulta",
   "description": "",
   "id": ":-consulta",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5420238300,
+  "duration": 2917620700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 12,
+  "line": 13,
   "name": ": Consultar Ovo de Pascoa",
   "description": "",
   "id": ":-consulta;:-consultar-ovo-de-pascoa",
@@ -41,17 +45,17 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 13,
+  "line": 14,
   "name": "que acesso o site Wikipedia em Portugues",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
+  "line": 15,
   "name": "pesquiso por \"Ovo de Pascoa\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 15,
+  "line": 16,
   "name": "exibe a expressao \"Ovo de Pascoa\" no titulo da guia",
   "keyword": "Then "
 });
@@ -59,7 +63,7 @@ formatter.match({
   "location": "Post.queAcessoOSiteWikipediaEmPortugues()"
 });
 formatter.result({
-  "duration": 4524363800,
+  "duration": 5528946900,
   "status": "passed"
 });
 formatter.match({
@@ -72,7 +76,7 @@ formatter.match({
   "location": "Post.pesquisoPor(String)"
 });
 formatter.result({
-  "duration": 2554124200,
+  "duration": 3234413200,
   "status": "passed"
 });
 formatter.match({
@@ -85,11 +89,11 @@ formatter.match({
   "location": "Post.exibeAExpressaoNoTituloDaGuia(String)"
 });
 formatter.result({
-  "duration": 30566700,
+  "duration": 128377100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1663030100,
+  "duration": 1185135200,
   "status": "passed"
 });
 });

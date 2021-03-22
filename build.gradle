@@ -47,12 +47,12 @@ dependencies {
 }
  test {
 
-     useJUnit()
+     useJUnit() //roda todos os testes
  }
 
 task regressionTests(type: Test){
 
-    include '**/Runner*'
+    include '**/Runner*' //executa uma especifica
 }
 task smokeTests(type: Test){
 

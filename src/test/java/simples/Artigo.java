@@ -52,7 +52,8 @@ public class Artigo {
         // pesquisar um elemento sempre procuramos pelo id
 
         driver.findElement(By.id("searchInput")).sendKeys("Ovo de Páscoa"); // procura a barra de pesquisa e escrever ovo da pascoa
-        driver.findElement(By.id("searchButton")).click();//clica no botão de pesquisar
+        //driver.findElement(By.id("searchButton")).click();//clica no botão de pesquisar
+        driver.findElement(By.cssSelector("button.wvui-button")).click();
 
         //válidar titulo da página de retorno assertEquals importar static junit
         //assertEquals("Ovo de Páscoa ? Wikipédia, a enciclopédia livre", driver.getTitle()); //driver.get vai pegar o titulo que está na guia

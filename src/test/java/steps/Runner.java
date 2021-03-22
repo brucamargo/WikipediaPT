@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty",
                 "html:target/relatorioSimples",
-                "json:target/relatorioSimples.json",
+                "json:target/relatorioSimples.json", //precisa desserel para gerar o debaixo
                 "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/dashboard.html"
         }
 )
